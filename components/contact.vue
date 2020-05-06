@@ -25,7 +25,7 @@
           <v-row>
             <v-col
               md="6"
-              sm="12"
+              cols="12"
             >
               <v-col
                 cols="12"
@@ -61,7 +61,7 @@
             </v-col>
             <v-col
               md="6"
-              sm="12"
+              cols="12"
             >
               <v-col
                 cols="12"
