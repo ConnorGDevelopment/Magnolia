@@ -1,7 +1,7 @@
 <template>
   <v-row
     id="about"
-    :style="{'background-image' : 'url(/about.jpg)'}"
+    :style="{'background-image' : 'url(/img/about.jpg)'}"
     :class="classBundle.backgroundImage"
   >
     <v-col

@@ -15,7 +15,7 @@
         <v-card-text>
           <v-row class="align-center">
             <v-col cols="4">
-              <v-img src="/team1.png" />
+              <v-img src="/img/team1.png" />
             </v-col>
             <v-col
               cols="8"

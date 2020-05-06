@@ -11,7 +11,7 @@
         <v-img
           contain
           max-height="100%"
-          src="/logo.svg"
+          src="/img/logo.svg"
         />
       </v-toolbar-title>
       <v-toolbar-items>
@@ -46,7 +46,7 @@
       >
         <v-img
           max-width="30%"
-          src="/logo.svg"
+          src="/img/logo.svg"
           class="mx-auto mb-2"
         />
         614-813-8625

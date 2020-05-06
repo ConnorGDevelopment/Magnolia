@@ -1,13 +1,13 @@
 <template>
   <v-row
     id="hero"
-    :style="{'background-image' : 'url(/hero.png)'}"
+    :style="{'background-image' : 'url(/img/hero.png)'}"
     :class="classBundle.backgroundImage"
   >
     <v-col>
       <v-img
         max-width="90%"
-        src="/logo.svg"
+        src="/img/logo.svg"
         class="mx-auto"
       />
     </v-col>
