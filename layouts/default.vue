@@ -29,7 +29,7 @@
         </v-btn>
       </v-toolbar-items>
     </v-app-bar>
-    <v-content>
+    <v-content class="secondary">
       <v-container
         fluid
         class="pa-0"
