@@ -31,7 +31,7 @@
 .outlineBorder {
   border: 2px solid black;
 }
-.v-card__text, .v-card__title {
+.v-card__text, .v-card__title, .v-card__subtitle {
   word-break: normal; /* maybe !important  */
 }
 </style>
