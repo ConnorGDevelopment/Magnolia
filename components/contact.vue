@@ -29,7 +29,7 @@
             >
               <v-col
                 cols="12"
-                class="outlineBorder pa-0 ma-2"
+                class="outlineBorder pa-0 ma-0 ma-sm-2"
               >
                 <v-card tile>
                   <v-card-title :class="classBundle.headline">
@@ -65,7 +65,7 @@
             >
               <v-col
                 cols="12"
-                class="outlineBorder pa-0 ma-2"
+                class="outlineBorder pa-0 ma-0 ma-sm-2"
               >
                 <v-card tile>
                   <v-card-title :class="classBundle.headline">
