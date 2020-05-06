@@ -14,7 +14,7 @@
           src="/img/logo.svg"
         />
       </v-toolbar-title>
-      <v-toolbar-items>
+      <v-toolbar-items v-show="$vuetify.breakpoint.lgAndUp">
         <v-btn
           v-for="link in links"
           :key="link.url"
@@ -28,6 +28,41 @@
           {{ link.text }}
         </v-btn>
       </v-toolbar-items>
+      <v-menu
+        v-show="$vuetify.breakpoint.mdAndDown"
+        offset-y
+        nudge-bottom="6"
+      >
+        <template v-slot:activator="{on}">
+          <v-btn
+            v-show="$vuetify.breakpoint.mdAndDown"
+            v-ripple="{ 'class' : 'accent--text'}"
+            icon
+            v-on="on"
+          >
+            <v-icon>
+              mdi-menu
+            </v-icon>
+          </v-btn>
+        </template>
+        <v-list class="secondary">
+          <v-list-item
+            v-for="link in links"
+            :key="link.url"
+            v-bind="links"
+          >
+            <v-btn
+              v-ripple="{ 'class' : 'accent--text'}"
+              text
+              nuxt
+              :to="link.url"
+              class="title text-capitalize px-2 text--primary"
+            >
+              {{ link.text }}
+            </v-btn>
+          </v-list-item>
+        </v-list>
+      </v-menu>
     </v-app-bar>
     <v-content class="secondary">
       <v-container

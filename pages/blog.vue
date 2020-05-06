@@ -8,7 +8,7 @@
         lg="10"
         offset-lg="1"
       >
-        <v-card>
+        <v-card tile>
           <v-card-title :class="classBundleBlog.display1">
             Our Story
           </v-card-title>

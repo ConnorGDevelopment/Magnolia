@@ -2,14 +2,14 @@
   <v-col
 
     cols="12"
-    class="outlineBorder pa-0 ma-2"
+    class="outlineBorder pa-0 mx-sm-2 my-2"
   >
     <v-card tile>
       <v-btn
         v-show="$vuetify.breakpoint.xs"
         block
         tile
-        large
+        :style="{'max-width' : '100%'}"
         :class="classBundle.headline"
         :service="service"
         @click="showService = !showService"
@@ -38,7 +38,7 @@
         >
           {{ subtitle.text }}
         </v-card-subtitle>
-        <v-card-text>
+        <v-card-text class="pa-0 pa-sm-4">
           <v-col cols="12">
             <v-row
               v-for="item in service.items"

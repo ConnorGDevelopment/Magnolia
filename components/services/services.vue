@@ -21,6 +21,7 @@
           <v-col
             md="6"
             cols="12"
+            class="pb-0 pb-sm-3"
           >
             <serviceMenu
               v-for="service in servicesLeft"
@@ -32,12 +33,14 @@
           <v-col
             md="6"
             cols="12"
+            class="pt-0 pt-sm-3"
           >
             <serviceMenu
               v-for="service in servicesRight"
               :key="service.title"
               :service="service"
               :class-bundle="classBundle"
+              class="mt-0 mt-sm-2"
             />
           </v-col>
         </v-row>
