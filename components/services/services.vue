@@ -18,7 +18,10 @@
           Please check back as our team grows.
         </v-card-subtitle>
         <v-row>
-          <v-col cols="6">
+          <v-col
+            md="6"
+            cols="12"
+          >
             <serviceMenu
               v-for="service in servicesLeft"
               :key="service.title"
@@ -26,7 +29,10 @@
               :class-bundle="classBundle"
             />
           </v-col>
-          <v-col cols="6">
+          <v-col
+            md="6"
+            cols="12"
+          >
             <serviceMenu
               v-for="service in servicesRight"
               :key="service.title"
@@ -40,7 +46,7 @@
         </v-card-title>
         <v-divider :class="classBundle.divider" />
         <v-card-subtitle :class="classBundle.body1">
-          Though we love the little’s that come to us, in order to keep the integrity of the salon environment as mentioned above, we ask that all children come during their appointment only.
+          Though we love the young ones that come to us, in order to keep the integrity of the salon environment as mentioned above, we ask that all children come during their appointment only.
           <br>
           All siblings will need to be accompanied by an adult in the reception area.
           <br>

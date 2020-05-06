@@ -31,6 +31,9 @@
 .outlineBorder {
   border: 2px solid black;
 }
+.v-card__text, .v-card__title {
+  word-break: normal; /* maybe !important  */
+}
 </style>
 
 <script>
@@ -61,8 +64,8 @@
           menuDivider: 'primary mx-2',
           backgroundImage: 'align-center backgroundImage',
           backgroundCard: 'secondary elevation-0',
-          display1: 'display-1 text--primary justify-center ',
-          headline: 'headline text--primary justify-center',
+          display1: 'display-1 text--primary justify-center text-center',
+          headline: 'headline text--primary justify-center text-center',
           title: 'title text--primary justify-center text-center',
           subtitle1Italic: 'subtitle-1 text--primary text-center font-weight-light font-italic',
           body1: 'body-1 text--primary text-center font-weight-light',

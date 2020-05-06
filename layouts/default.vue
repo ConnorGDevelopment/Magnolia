@@ -47,7 +47,12 @@
         <v-img
           max-width="30%"
           src="/img/logo.svg"
-          class="mx-auto mb-2"
+          class="mx-auto mb-2 hidden-xs-only"
+        />
+        <v-img
+          max-width="60%"
+          src="/img/logo.svg"
+          class="mx-auto mb-2 hidden-sm-and-up"
         />
         614-813-8625
         <br>

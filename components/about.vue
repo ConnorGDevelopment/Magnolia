@@ -1,12 +1,7 @@
 <template>
-  <v-row
-    id="about"
-    :style="{'background-image' : 'url(/img/about.jpg)'}"
-    :class="classBundle.backgroundImage"
-  >
+  <v-row id="about">
     <v-col
-      cols="8"
-      offset="2"
+      cols="12"
     >
       <v-card tile>
         <v-card-title :class="classBundle.display1">

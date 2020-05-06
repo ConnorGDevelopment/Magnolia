@@ -5,8 +5,8 @@
   >
     <v-row>
       <v-col
-        cols="8"
-        offset="2"
+        lg="10"
+        offset-lg="1"
       >
         <v-card>
           <v-card-title :class="classBundleBlog.display1">
@@ -20,7 +20,11 @@
             May 3rd, 2020
           </v-card-subtitle>
           <v-card-text>
-            <v-img src="/img/about.jpg" />
+            <v-img
+              contain
+              src="/img/blog1.jpg"
+              :style="{'max-height' : '75vh'}"
+            />
           </v-card-text>
           <v-card-text :class="classBundleBlog.body1">
             The Magnolia Salon Boutique, located in quaint historic Old Dublin, was born out of a desire to offer guests a unique experience that promotes both beauty and wellness through personal attention, the latest in top product lines, professionalism and skill.

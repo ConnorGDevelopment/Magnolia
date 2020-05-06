@@ -23,7 +23,10 @@
         </v-card-subtitle>
         <v-card-text>
           <v-row>
-            <v-col cols="6">
+            <v-col
+              md="6"
+              sm="12"
+            >
               <v-col
                 cols="12"
                 class="outlineBorder pa-0 ma-2"
@@ -56,7 +59,10 @@
                 </v-card>
               </v-col>
             </v-col>
-            <v-col cols="6">
+            <v-col
+              md="6"
+              sm="12"
+            >
               <v-col
                 cols="12"
                 class="outlineBorder pa-0 ma-2"

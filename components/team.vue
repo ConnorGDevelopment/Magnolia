@@ -1,6 +1,10 @@
 <template>
   <v-row id="team">
-    <v-col cols="12">
+    <v-col
+      sm="12"
+      xl="8"
+      offset-xl="2"
+    >
       <v-card
         tile
         :class="classBundle.backgroundCard"
@@ -14,11 +18,15 @@
         </v-card-subtitle>
         <v-card-text>
           <v-row class="align-center">
-            <v-col cols="4">
+            <v-col
+              cols="12"
+              sm="4"
+            >
               <v-img src="/img/team1.png" />
             </v-col>
             <v-col
-              cols="8"
+              cols="12"
+              sm="8"
               class="outlineBorder pa-0 elevation-2"
             >
               <v-card

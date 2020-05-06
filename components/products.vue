@@ -11,7 +11,8 @@
         <v-card-text>
           <v-row class="align-center px-4 py-2">
             <v-col
-              cols="6"
+              md="6"
+              cols="12"
               :class="classBundle.body1"
             >
               We at The Magnolia Salon Boutique, believe that taking care of our health and environment is as important as taking care of our hair.
@@ -21,7 +22,8 @@
               Please check back often as we continue our research into new clean and safe product lines.
             </v-col>
             <v-col
-              cols="6"
+              md="6"
+              cols="12"
               class="outlineBorder"
             >
               <v-card
