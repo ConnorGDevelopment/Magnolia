@@ -20,6 +20,8 @@ export default {
       },
     ],
   },
+  /* Adding Nuxt/Components */
+  components: true,
   /*
      ** Customize the progress-bar color
      */
@@ -39,12 +41,14 @@ export default {
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
     '@nuxtjs/vuetify',
+    '@nuxt/components',
   ],
   /*
      ** Nuxt.js modules
      */
   modules: [
     '@nuxtjs/axios',
+    '@nuxt/content',
   ],
   /*
      ** vuetify module configuration

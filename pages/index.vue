@@ -37,26 +37,7 @@
 </style>
 
 <script>
-  import hero from '../components/hero.vue'
-  import covid from '../components/covid.vue'
-  import about from '../components/about.vue'
-  import team from '../components/team.vue'
-  import products from '../components/products.vue'
-  import services from '../components/services/services.vue'
-  import contact from '../components/contact.vue'
-  import career from '../components/career.vue'
-
   export default {
-    components: {
-      hero,
-      covid,
-      about,
-      team,
-      products,
-      services,
-      contact,
-      career,
-    },
     data () {
       return {
         classBundle: {
