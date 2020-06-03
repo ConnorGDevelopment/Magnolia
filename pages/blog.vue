@@ -8,37 +8,33 @@
         lg="10"
         offset-lg="1"
       >
-        <v-card tile>
+        <v-card
+          v-for="post in blog"
+          :key="post.title"
+          tile
+        >
           <v-card-title :class="classBundleBlog.display1">
-            Our Story
+            {{ post.title }}
           </v-card-title>
           <v-divider :class="classBundleBlog.divider" />
           <v-card-subtitle
             :class="classBundleBlog.body1Italic"
             class="text-center"
           >
-            May 3rd, 2020
+            {{ post.date }}
           </v-card-subtitle>
           <v-card-text>
             <v-img
               contain
-              src="/img/blog1.jpg"
+              :src="post.image"
               :style="{'max-height' : '75vh'}"
             />
           </v-card-text>
           <v-card-text :class="classBundleBlog.body1">
-            The Magnolia Salon Boutique, located in quaint historic Old Dublin, was born out of a desire to offer guests a unique experience that promotes both beauty and wellness through personal attention, the latest in top product lines, professionalism and skill.
-            <br><br>
-            Hi, I’m Dyan Carol Reckner and I would like to share how my dream of opening The Magnolia got started. I was extremely fortunate to be trained early in my career by the top hair artists in the world and eventually became an artistic director and educator on this team. The professionalism and client service was second to none. Above and beyond and the best became my mantra.
-            <br><br>
-            After raising two wonderful children, I had a strong desire to return to my roots and work with like-minded individuals again. I’ve worked in Old Dublin for fourteen years and then several years in a single studio. Sharing talent with other salon professionals and offering clients the same professional quality went from a dream to a goal.
-            <br><br>
-            When the charming location at 119 S. High St became available, I was excited and beyond thrilled. My dream and goal was born and The Magnolia Salon was created. The flower represents dignity, perseverance, magnificence and purity. These are all qualities that I value and wanted represented in myself and others that I work with.
-            <br><br>
-            I welcome you to our new location. Please stop by to say hello or to make an appointment to meet us! We’ll be delighted you did!
+            <nuxt-content :document="post" />
           </v-card-text>
           <v-card-text :class="classBundleBlog.body1Italic">
-            - Dyan Reckner, Founder of The Magnolia Salon Boutique
+            {{ post.closing }}
           </v-card-text>
         </v-card>
       </v-col>
@@ -48,6 +44,12 @@
 
 <script>
   export default {
+    async asyncData ({ $content }) {
+      const blog = await $content().fetch()
+      return {
+        blog,
+      }
+    },
     data () {
       return {
         classBundleBlog: {
