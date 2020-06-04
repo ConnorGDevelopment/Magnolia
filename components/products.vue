@@ -17,7 +17,7 @@
             >
               We at The Magnolia Salon Boutique, believe that taking care of our health and environment is as important as taking care of our hair.
               <br>
-              That’s why we use product lines that are safe for all aspects. Part of wellness and self-care starts with using high performing professional products that uses ingredients that protect your hair and color.
+              We strive to use products that are safe in all aspects. Part of wellness and self-care starts with using high performing professional products that uses ingredients that protect your hair and color.
               <br>
               Please check back often as we continue our research into new clean and safe product lines.
             </v-col>

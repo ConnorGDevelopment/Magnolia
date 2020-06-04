@@ -17,7 +17,7 @@
           <br>
           Please check back as our team grows.
         </v-card-subtitle>
-        <v-row>
+        <v-row v-show="$vuetify.breakpoint.smAndUp === true">
           <v-col
             md="6"
             cols="12"
@@ -41,6 +41,30 @@
               :service="service"
               :class-bundle="classBundle"
               class="mt-0 mt-sm-2"
+            />
+          </v-col>
+        </v-row>
+        <v-row v-show="$vuetify.breakpoint.xs === true">
+          <v-col
+            md="6"
+            cols="12"
+            class="pb-0 pb-sm-3"
+          >
+            <serviceMenu
+              :service="servicesLeft[0]"
+              :class-bundle="classBundle"
+            />
+            <serviceMenu
+              :service="servicesRight[0]"
+              :class-bundle="classBundle"
+            />
+            <serviceMenu
+              :service="servicesLeft[1]"
+              :class-bundle="classBundle"
+            />
+            <serviceMenu
+              :service="servicesLeft[2]"
+              :class-bundle="classBundle"
             />
           </v-col>
         </v-row>
