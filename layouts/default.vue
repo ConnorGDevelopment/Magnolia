@@ -23,7 +23,7 @@
           text
           nuxt
           class="title text-capitalize px-2 text--primary"
-          :to="link.url"
+          :[link.binding]="link.url"
         >
           {{ link.text }}
         </v-btn>
@@ -55,7 +55,7 @@
               v-ripple="{ 'class' : 'accent--text'}"
               text
               nuxt
-              :to="link.url"
+              :[link.binding]="link.url"
               class="title text-capitalize px-2 text--primary"
             >
               {{ link.text }}
@@ -129,38 +129,47 @@
           {
             url: '/#hero',
             text: 'Home',
+            binding: 'to',
           },
           {
             url: '/#about',
             text: 'About',
+            binding: 'to',
           },
           {
             url: '/#team',
             text: 'Our Team',
+            binding: 'to',
           },
           {
             url: '/#products',
             text: 'Products',
+            binding: 'to',
           },
           {
             url: '/#services',
             text: 'Services',
+            binding: 'to',
           },
           {
             url: '/#contact',
             text: 'Contact',
+            binding: 'to',
           },
           {
             url: '/#career',
             text: 'Career Paths',
+            binding: 'to',
           },
           {
-            url: '/#instagram',
+            url: 'https://www.instagram.com/magnoliasalonboutique/',
             text: 'Instagram',
+            binding: 'href',
           },
           {
             url: '/blog',
             text: 'Blog',
+            binding: 'to',
           },
         ],
       }
