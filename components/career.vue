@@ -17,7 +17,7 @@
           :class="classBundle.body1Italic"
           class="pt-0"
         >
-          dyan@magnoliasalonboutique.com
+          dcr@magnoliasalonboutique.com
         </v-card-subtitle>
       </v-card>
     </v-col>
