@@ -22,7 +22,7 @@
           v-bind="links"
           text
           nuxt
-          class="title text-capitalize px-2 text--primary"
+          class="title text-capitalize px-2 primary--text"
           :[link.binding]="link.url"
         >
           {{ link.text }}
@@ -56,7 +56,7 @@
               text
               nuxt
               :[link.binding]="link.url"
-              class="title text-capitalize px-2 text--primary"
+              class="title text-capitalize px-2 primary--text"
             >
               {{ link.text }}
             </v-btn>
@@ -77,7 +77,7 @@
     >
       <v-col
         cols="12"
-        class="body-1 text--primary text-center font-weight-light"
+        class="body-1 primary--text text-center font-weight-light"
       >
         <v-img
           max-width="30%"
