@@ -69,6 +69,9 @@
                 <v-card-title :class="classBundle.headline">
                   Mariah Furniss
                 </v-card-title>
+                <v-card-subtitle :class="classBundle.title">
+                  Hair Designer
+                </v-card-subtitle>
                 <v-card-text :class="classBundle.body1">
                   My love for fashion and trends fuels my desire to create those Pinterest perfect techniques my guests request.
                   <br>
