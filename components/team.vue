@@ -51,6 +51,33 @@
                 </v-card-text>
               </v-card>
             </v-col>
+            <v-col
+              cols="12"
+              sm="4"
+            >
+              <v-img src="/img/team2.png" />
+            </v-col>
+            <v-col
+              cols="12"
+              sm="8"
+              class="outlineBorder pa-0 elevation-2"
+            >
+              <v-card
+                tile
+                class="pb-3"
+              >
+                <v-card-title :class="classBundle.headline">
+                  Mariah Furniss
+                </v-card-title>
+                <v-card-text :class="classBundle.body1">
+                  My love for fashion and trends fuels my desire to create those Pinterest perfect techniques my guests request.
+                  <br>
+                  Because every highlight is meticulously placed, the grow out is seamless and perfect for our busy schedules.
+                  <br>
+                  In my free time, I love spending time with my three cats Panda, Luna, and Oliver. I also enjoy tending to my houseplants and spending time with my family and friends.
+                </v-card-text>
+              </v-card>
+            </v-col>
           </v-row>
         </v-card-text>
       </v-card>
