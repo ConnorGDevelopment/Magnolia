@@ -8,6 +8,7 @@
     fluid
     class="pt-0 secondary"
   >
+  <!-- This website had a single page design, so several components are loaded in. -->
     <hero :class-bundle="classBundle" />
     <covid :class-bundle="classBundle" />
     <about :class-bundle="classBundle" />
@@ -20,6 +21,7 @@
 </template>
 
 <style>
+/* These css properties are passed down to the components */
 .dividerWidth {
   width: 20%;
 }
@@ -40,6 +42,7 @@
   export default {
     data () {
       return {
+        // This is a series of strings which are dynamically bound to the classes for divs. The classes are provided by the Vuetify framework and I bundled together the ones I used commonly.
         classBundle: {
           divider: 'primary mx-auto dividerWidth',
           menuDivider: 'primary mx-2',
