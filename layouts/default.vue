@@ -1,9 +1,11 @@
 <template>
   <v-app>
+    <!-- The Header Bar, using the Vuetify App Bar Component -->
     <v-app-bar
       app
       class="secondary"
     >
+    <!-- Here, the logo is being used as the title for the toolbar -->
       <v-toolbar-title
         :style="{'max-height' : '100%'}"
         class="d-flex px-2"
@@ -14,7 +16,9 @@
           src="/img/logo.svg"
         />
       </v-toolbar-title>
+      <!-- The items within this toolbar are buttons that navigate to anchor links within the site. -->
       <v-toolbar-items v-show="$vuetify.breakpoint.lgAndUp">
+        <!-- Instead of coding each button, I use some template syntax to say 'create an instance of this button for each item in links' -->
         <v-btn
           v-for="link in links"
           :key="link.url"
@@ -28,6 +32,7 @@
           {{ link.text }}
         </v-btn>
       </v-toolbar-items>
+      <!-- This is the code for the mobile menu, which works similarly except has a hamburger menu that show the navigation links when clicked on -->
       <v-menu
         v-show="$vuetify.breakpoint.mdAndDown"
         offset-y
@@ -64,6 +69,7 @@
         </v-list>
       </v-menu>
     </v-app-bar>
+    <!-- Here is where the Nuxt component is placed, which is where the page file is inserted -->
     <v-content class="secondary">
       <v-container
         fluid
@@ -125,6 +131,8 @@
     data () {
       return {
         title: 'Vuetify.js',
+        // This is an array of links which are objects with a url, text and binding.
+        // The url is either an anchor link or an outside url, the text is what is displayed on the button, and the binding specifies whether it should treat the button as an anchor link or href. 
         links: [
           {
             url: '/#hero',

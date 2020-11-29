@@ -5,6 +5,7 @@
     class="outlineBorder pa-0 mx-sm-2 my-2"
   >
     <v-card tile>
+      <!-- On mobile, the service name is displayed as a button and when clicked it reveals the pricing and description. -->
       <v-btn
         v-show="$vuetify.breakpoint.xs"
         block
@@ -14,6 +15,7 @@
         :service="service"
         @click="showService = !showService"
       >
+      <!-- Displaying data as text is done with double curly brackets, the service.title is passed from the service component. -->
         {{ service.title }}
       </v-btn>
       <v-card-title

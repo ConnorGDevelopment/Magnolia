@@ -6,6 +6,7 @@
           Services
         </v-card-title>
         <v-divider :class="classBundle.divider" />
+        <!-- This is some hard coded information for the page -->
         <v-card-subtitle :class="classBundle.body1">
           Not all cuts or services are created equal.
           <br>
@@ -17,12 +18,15 @@
           <br>
           Please check back as our team grows.
         </v-card-subtitle>
+        <!-- This displays the services available, the code is not very clean because my client wanted to reverse the order in which the services appear on mobile vs. desktop -->
         <v-row v-show="$vuetify.breakpoint.smAndUp === true">
           <v-col
             md="6"
             cols="12"
             class="pb-0 pb-sm-3"
           >
+          <!-- serviceMenu is a subcomponent that I repeat for each item in servicesLeft. -->
+          <!-- For each instance of serviceMenu, I pass a key which is a unique identifier, the service item with contains the text and pricing, and classBundle which is a series of strings that correlate to several classes. -->
             <serviceMenu
               v-for="service in servicesLeft"
               :key="service.title"
@@ -44,6 +48,7 @@
             />
           </v-col>
         </v-row>
+        <!-- This is where the special ordering is done for the mobile view -->
         <v-row v-show="$vuetify.breakpoint.xs === true">
           <v-col
             md="6"

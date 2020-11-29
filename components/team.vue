@@ -73,11 +73,13 @@
                   Hair Designer
                 </v-card-subtitle>
                 <v-card-text :class="classBundle.body1">
-                  My love for fashion and trends fuels my desire to create those Pinterest perfect techniques my guests request.
-                  <br>
-                  Because every highlight is meticulously placed, the grow out is seamless and perfect for our busy schedules.
-                  <br>
-                  In my free time, I love spending time with my three cats Panda, Luna, and Oliver. I also enjoy tending to my houseplants and spending time with my family and friends.
+            I love connecting with my guests, not only on a professional level, but personal as well. 
+            <br>
+            This assists my ability to envision and create the perfect hair design unique to them.
+            <br>
+My passion for fashion and trends fuels my desire to create those Pinterest perfect techniques that are high in demand. 
+<br>
+Because every highlight is meticulously placed, the grow out is seamless and ideal for busy schedules!
                 </v-card-text>
               </v-card>
             </v-col>
