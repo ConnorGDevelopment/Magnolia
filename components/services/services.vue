@@ -25,8 +25,8 @@
             cols="12"
             class="pb-0 pb-sm-3"
           >
-          <!-- serviceMenu is a subcomponent that I repeat for each item in servicesLeft. -->
-          <!-- For each instance of serviceMenu, I pass a key which is a unique identifier, the service item with contains the text and pricing, and classBundle which is a series of strings that correlate to several classes. -->
+            <!-- serviceMenu is a subcomponent that I repeat for each item in servicesLeft. -->
+            <!-- For each instance of serviceMenu, I pass a key which is a unique identifier, the service item with contains the text and pricing, and classBundle which is a series of strings that correlate to several classes. -->
             <serviceMenu
               v-for="service in servicesLeft"
               :key="service.title"
@@ -114,11 +114,13 @@
             items: [
               {
                 title: "Women's Haircut",
-                price: '$55',
+                priceDesigner: '$40',
+                priceSeniorDesigner: '$55',
               },
               {
                 title: "Men's Haircut",
-                price: '$35',
+                priceDesigner: '$35',
+                priceSeniorDesigner: '$40',
               },
               {
                 title: "Children's Haircut",
@@ -204,11 +206,13 @@
             items: [
               {
                 title: 'Color Retouch',
-                price: '$75',
+                priceDesigner: '$65',
+                priceSeniorDesigner: '$80',
               },
               {
                 title: 'Full Highlights',
-                price: '$120',
+                priceDesigner: '$95',
+                priceSeniorDesigner: '$120',
               },
               {
                 title: 'Partial Highlights',

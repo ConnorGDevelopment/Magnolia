@@ -5,7 +5,7 @@
       app
       class="secondary"
     >
-    <!-- Here, the logo is being used as the title for the toolbar -->
+      <!-- Here, the logo is being used as the title for the toolbar -->
       <v-toolbar-title
         :style="{'max-height' : '100%'}"
         class="d-flex px-2"
@@ -132,7 +132,7 @@
       return {
         title: 'Vuetify.js',
         // This is an array of links which are objects with a url, text and binding.
-        // The url is either an anchor link or an outside url, the text is what is displayed on the button, and the binding specifies whether it should treat the button as an anchor link or href. 
+        // The url is either an anchor link or an outside url, the text is what is displayed on the button, and the binding specifies whether it should treat the button as an anchor link or href.
         links: [
           {
             url: '/#hero',

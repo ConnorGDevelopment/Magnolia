@@ -15,7 +15,7 @@
         :service="service"
         @click="showService = !showService"
       >
-      <!-- Displaying data as text is done with double curly brackets, the service.title is passed from the service component. -->
+        <!-- Displaying data as text is done with double curly brackets, the service.title is passed from the service component. -->
         {{ service.title }}
       </v-btn>
       <v-card-title
@@ -63,11 +63,24 @@
                 <v-divider :class="classBundle.menuDivider" />
               </v-col>
               <v-col
+                v-if="item.price"
                 cols="12"
                 sm="5"
                 class="py-1 py-sm-3"
               >
                 {{ item.price }}
+              </v-col>
+              <v-col
+                v-if="item.priceDesigner || item.priceSeniorDesigner"
+                cols="12"
+                sm="5"
+                class="py-1 py-sm-3"
+              >
+                Designer: <br v-show="$vuetify.breakpoint.md">{{ item.priceDesigner }}
+                <br>
+                <span v-show="!$vuetify.breakpoint.md">Senior</span>
+                <span v-show="$vuetify.breakpoint.md">Sr.</span>
+                Designer: <br v-show="$vuetify.breakpoint.md">{{ item.priceSeniorDesigner }}
               </v-col>
             </v-row>
           </v-col>

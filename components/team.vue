@@ -73,13 +73,13 @@
                   Hair Designer
                 </v-card-subtitle>
                 <v-card-text :class="classBundle.body1">
-            I love connecting with my guests, not only on a professional level, but personal as well. 
-            <br>
-            This assists my ability to envision and create the perfect hair design unique to them.
-            <br>
-My passion for fashion and trends fuels my desire to create those Pinterest perfect techniques that are high in demand. 
-<br>
-Because every highlight is meticulously placed, the grow out is seamless and ideal for busy schedules!
+                  I love connecting with my guests, not only on a professional level, but personal as well.
+                  <br>
+                  This assists my ability to envision and create the perfect hair design unique to them.
+                  <br>
+                  My passion for fashion and trends fuels my desire to create those Pinterest perfect techniques that are high in demand.
+                  <br>
+                  Because every highlight is meticulously placed, the grow out is seamless and ideal for busy schedules!
                 </v-card-text>
               </v-card>
             </v-col>

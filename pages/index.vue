@@ -8,7 +8,7 @@
     fluid
     class="pt-0 secondary"
   >
-  <!-- This website had a single page design, so several components are loaded in. -->
+    <!-- This website had a single page design, so several components are loaded in. -->
     <hero :class-bundle="classBundle" />
     <covid :class-bundle="classBundle" />
     <about :class-bundle="classBundle" />
