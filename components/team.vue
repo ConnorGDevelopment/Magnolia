@@ -51,39 +51,6 @@
                 </v-card-text>
               </v-card>
             </v-col>
-            <v-col
-              cols="12"
-              sm="4"
-            >
-              <v-img src="/img/team2.png" />
-            </v-col>
-            <v-col
-              cols="12"
-              sm="8"
-              class="outlineBorder pa-0 elevation-2"
-            >
-              <v-card
-                tile
-                class="pb-3"
-              >
-                <v-card-title :class="classBundle.headline">
-                  Mariah Furniss
-                </v-card-title>
-                <v-card-subtitle :class="classBundle.title">
-                  Hair Designer
-                </v-card-subtitle>
-                <v-card-text :class="classBundle.body1">
-                  I love connecting with my guests, not only on a professional level, but personal as well.
-                  <br>
-                  This assists my ability to envision and create the perfect hair design unique to them.
-                  <br>
-                  My passion for fashion and trends fuels my desire to create those Pinterest perfect techniques that are high in demand.
-                  <br>
-                  Because every highlight is meticulously placed, the grow out is seamless and ideal for busy schedules!
-                </v-card-text>
-              </v-card>
-            </v-col>
-          </v-row>
         </v-card-text>
       </v-card>
     </v-col>
