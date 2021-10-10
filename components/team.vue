@@ -51,6 +51,39 @@
                 </v-card-text>
               </v-card>
             </v-col>
+        <v-col
+              cols="12"
+              sm="4"
+            >
+              <v-img src="/img/team2.png" />
+            </v-col>
+            <v-col
+              cols="12"
+              sm="8"
+              class="outlineBorder pa-0 elevation-2"
+            >
+              <v-card
+                tile
+                class="pb-3"
+              >
+                <v-card-title :class="classBundle.headline">
+                  Kristie Kirkpatrick
+                </v-card-title>
+                <v-card-subtitle :class="classBundle.title">
+                  Hair Designer
+                </v-card-subtitle>
+                <v-card-text :class="classBundle.body1">
+                    I have served in the beauty industry for most of my career. As an independent stylist, I have taken my passion in the industry to the next level.
+                    <br>
+                    It allows me to spend the time needed with each guest and give them that extra personal touch.
+                    <br>
+                    With thorough one on one consultations, along with my creativity and versatility, my goal is to create the perfect cut, color and style for each and every guest.
+                    <br>
+                    Life is not perfect, but your hair can be!
+                </v-card-text>
+              </v-card>
+            </v-col>
+          </v-row>
         </v-card-text>
       </v-card>
     </v-col>
