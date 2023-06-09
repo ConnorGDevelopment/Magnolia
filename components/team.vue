@@ -104,10 +104,7 @@
                   cut, color and style for each and every guest. Life is not
                   perfect, but your hair can be!"
                 </v-card-text>
-                <v-card-text :class="classBundle.body1">
-                  My specialty is to take today’s trends and adjust them to the
-                  individual’s age, face shape and physical stature,
-                </v-card-text>
+
                 <v-card-text :class="classBundle.subtitle1Italic">
                   Products: Lanza, Alterna, Moroccan Oil
                 </v-card-text>
