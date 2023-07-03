@@ -78,17 +78,16 @@
         </v-card-title>
         <v-divider :class="classBundle.divider" />
         <v-card-subtitle :class="classBundle.body1">
-          Though we love the young ones that come to us, in order to keep the
-          integrity of the salon environment as mentioned above, we ask that all
-          children come during their appointment only.
+          We love the young ones and look forward to seeing them for their
+          haircuts.
           <br />
-          All siblings will need to be accompanied by an adult in the reception
-          area.
+          We understand there are circumstances where they need to come in
+          during their parent's service.
           <br />
-          The child must be able to sit attentively so that the designers can
-          use extremely sharp tools without distraction.
+          We ask that parents monitor their children's behavior so that it
+          doesn't disturb other designers and customers services.
           <br />
-          We thank you in advance for your attention to these requirements.
+          We thank you in advance for your attention to this.
         </v-card-subtitle>
       </v-card>
     </v-col>
@@ -96,7 +95,7 @@
 </template>
 
 <script>
-import serviceMenu from "../services/serviceMenu.vue";
+import serviceMenu from '../services/serviceMenu.vue'
 export default {
   components: {
     serviceMenu,
@@ -108,131 +107,131 @@ export default {
     return {
       servicesLeft: [
         {
-          title: "Haircuts",
+          title: 'Haircuts',
           subtitle: [
             {
               index: 0,
-              text: "Haircuts include a full consultation before every service, massaging shampoo, full style including training with tools, technique and products used.",
+              text: 'Haircuts include a full consultation before every service, massaging shampoo, full style including training with tools, technique and products used.',
             },
           ],
           items: [
             {
               title: "Women's Haircut",
-              priceDesigner: "$40",
-              priceSeniorDesigner: "$55",
+              priceDesigner: '$40',
+              priceSeniorDesigner: '$55',
             },
             {
               title: "Men's Haircut",
-              priceDesigner: "$35",
-              priceSeniorDesigner: "$40",
+              priceDesigner: '$35',
+              priceSeniorDesigner: '$40',
             },
             {
               title: "Children's Haircut",
-              price: "To Be Determined Per Child",
+              price: 'To Be Determined Per Child',
             },
           ],
         },
         {
-          title: "Waxing",
+          title: 'Waxing',
           subtitle: [
             {
               index: 0,
-              text: "Facial Waxing Only. Multiple Services are discounted.",
+              text: 'Facial Waxing Only. Multiple Services are discounted.',
             },
           ],
           items: [
             {
-              title: "Brow Shaping",
-              price: "$19",
+              title: 'Brow Shaping',
+              price: '$19',
             },
             {
-              title: "Lip",
-              price: "$10",
+              title: 'Lip',
+              price: '$10',
             },
             {
-              title: "Chin",
-              price: "$10",
+              title: 'Chin',
+              price: '$10',
             },
             {
-              title: "Cheeks",
-              price: "$18",
+              title: 'Cheeks',
+              price: '$18',
             },
             {
-              title: "Brow Coloring Using Safe Plant Derived Color",
-              price: "$15",
+              title: 'Brow Coloring Using Safe Plant Derived Color',
+              price: '$15',
             },
           ],
         },
         {
-          title: "Additional Services",
+          title: 'Additional Services',
           items: [
             {
-              title: "Style Only",
-              price: "$40",
+              title: 'Style Only',
+              price: '$40',
             },
             {
-              title: "Permanent Waves",
-              price: "$100 As Per Consultation",
+              title: 'Permanent Waves',
+              price: '$100 As Per Consultation',
             },
             {
-              title: "Special Occasion Styling",
-              price: "To Be Determined At Consultation",
+              title: 'Special Occasion Styling',
+              price: 'To Be Determined At Consultation',
             },
           ],
         },
       ],
       servicesRight: [
         {
-          title: "Color Services",
+          title: 'Color Services',
           subtitle: [
             {
               index: 0,
-              text: "All color services include a full consultation before each service to determine which of our fine lines of colors and formulas would best reach your goal.",
+              text: 'All color services include a full consultation before each service to determine which of our fine lines of colors and formulas would best reach your goal.',
             },
             {
               index: 1,
-              text: "After each color, the hair is treated with a silkening low ph conditioner that is massaged into the scalp and hair for a relaxing finish.",
+              text: 'After each color, the hair is treated with a silkening low ph conditioner that is massaged into the scalp and hair for a relaxing finish.',
             },
             {
               index: 2,
-              text: "All services are completed with a beautiful dry style, using Davines products to achieve your desired results.",
+              text: 'All services are completed with a beautiful dry style, using Davines products to achieve your desired results.',
             },
             {
               index: 3,
-              text: "Multiple services are discounted, to be determined during consultation. For each color service that requires a haircut, add $45 (A $10 Value).",
+              text: 'Multiple services are discounted, to be determined during consultation. For each color service that requires a haircut, add $45 (A $10 Value).',
             },
             {
               index: 4,
-              text: "Extra styling or styling long or thick hair may require extra time and cost.",
+              text: 'Extra styling or styling long or thick hair may require extra time and cost.',
             },
           ],
           items: [
             {
-              title: "Color Retouch",
-              priceDesigner: "$65",
-              priceSeniorDesigner: "$80",
+              title: 'Color Retouch',
+              priceDesigner: '$65',
+              priceSeniorDesigner: '$80',
             },
             {
-              title: "Full Highlights",
-              priceDesigner: "$95",
-              priceSeniorDesigner: "$120",
+              title: 'Full Highlights',
+              priceDesigner: '$95',
+              priceSeniorDesigner: '$120',
             },
             {
-              title: "Partial Highlights",
-              price: "To Be Determined At Consultation",
+              title: 'Partial Highlights',
+              price: 'To Be Determined At Consultation',
             },
             {
-              title: "Balayage",
-              price: "Starting At $120, To Be Determined At Consultation",
+              title: 'Balayage',
+              price: 'Starting At $120, To Be Determined At Consultation',
             },
             {
-              title: "Color Retouch and Highlights",
-              price: "Starting At $100, To Be Determined At Consultation",
+              title: 'Color Retouch and Highlights',
+              price: 'Starting At $100, To Be Determined At Consultation',
             },
           ],
         },
       ],
-    };
+    }
   },
-};
+}
 </script>

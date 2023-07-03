@@ -27,7 +27,7 @@
         <v-card-text>
           <v-row>
             <v-col md="6" cols="12">
-              <v-col cols="12" class="outlineBorder pa-0 ma-0 ma-sm-2">
+              <v-col cols="12" class="pa-0 ma-0 ma-sm-2">
                 <v-card tile>
                   <v-card-title :class="classBundle.headline">
                     Hours
@@ -64,7 +64,7 @@
               </v-col>
             </v-col>
             <v-col md="6" cols="12">
-              <v-col cols="12" class="outlineBorder pa-0 ma-0 ma-sm-2">
+              <v-col cols="12" class="pa-0 ma-0 ma-sm-2">
                 <v-card tile>
                   <v-card-title :class="classBundle.headline">
                     Address and Parking
@@ -99,5 +99,5 @@ export default {
   props: {
     classBundle: Object,
   },
-};
+}
 </script>

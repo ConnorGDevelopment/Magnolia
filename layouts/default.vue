@@ -1,20 +1,10 @@
 <template>
   <v-app>
     <!-- The Header Bar, using the Vuetify App Bar Component -->
-    <v-app-bar
-      app
-      class="secondary"
-    >
+    <v-app-bar app class="secondary">
       <!-- Here, the logo is being used as the title for the toolbar -->
-      <v-toolbar-title
-        :style="{'max-height' : '100%'}"
-        class="d-flex px-2"
-      >
-        <v-img
-          contain
-          max-height="100%"
-          src="/img/logo.svg"
-        />
+      <v-toolbar-title :style="{ 'max-height': '100%' }" class="d-flex px-2">
+        <v-img contain max-height="100%" src="/img/logo.svg" />
       </v-toolbar-title>
       <!-- The items within this toolbar are buttons that navigate to anchor links within the site. -->
       <v-toolbar-items v-show="$vuetify.breakpoint.lgAndUp">
@@ -22,7 +12,7 @@
         <v-btn
           v-for="link in links"
           :key="link.url"
-          v-ripple="{ 'class' : 'accent--text'}"
+          v-ripple="{ class: 'accent--text' }"
           v-bind="links"
           text
           nuxt
@@ -33,31 +23,21 @@
         </v-btn>
       </v-toolbar-items>
       <!-- This is the code for the mobile menu, which works similarly except has a hamburger menu that show the navigation links when clicked on -->
-      <v-menu
-        v-show="$vuetify.breakpoint.mdAndDown"
-        offset-y
-        nudge-bottom="6"
-      >
-        <template v-slot:activator="{on}">
+      <v-menu v-show="$vuetify.breakpoint.mdAndDown" offset-y nudge-bottom="6">
+        <template v-slot:activator="{ on }">
           <v-btn
             v-show="$vuetify.breakpoint.mdAndDown"
-            v-ripple="{ 'class' : 'accent--text'}"
+            v-ripple="{ class: 'accent--text' }"
             icon
             v-on="on"
           >
-            <v-icon>
-              mdi-menu
-            </v-icon>
+            <v-icon> mdi-menu </v-icon>
           </v-btn>
         </template>
         <v-list class="secondary">
-          <v-list-item
-            v-for="link in links"
-            :key="link.url"
-            v-bind="links"
-          >
+          <v-list-item v-for="link in links" :key="link.url" v-bind="links">
             <v-btn
-              v-ripple="{ 'class' : 'accent--text'}"
+              v-ripple="{ class: 'accent--text' }"
               text
               nuxt
               :[link.binding]="link.url"
@@ -70,17 +50,12 @@
       </v-menu>
     </v-app-bar>
     <!-- Here is where the Nuxt component is placed, which is where the page file is inserted -->
-    <v-content class="secondary">
-      <v-container
-        fluid
-        class="pa-0"
-      >
+    <v-main class="secondary">
+      <v-container fluid class="pa-0">
         <nuxt />
       </v-container>
-    </v-content>
-    <v-footer
-      class="secondary"
-    >
+    </v-main>
+    <v-footer class="secondary">
       <v-col
         cols="12"
         class="body-1 primary--text text-center font-weight-light"
@@ -96,30 +71,36 @@
           class="mx-auto mb-2 hidden-sm-and-up"
         />
         614-813-8625
-        <br>
+        <br />
         119 South High
-        <br>
+        <br />
         Dublin, OH 43017
-        <br>
+        <br />
+        <br />
         <v-btn
-          icon
+          outlined
           large
           color="accent"
+          class="mr-md-2 mb-2 mb-md-0 elevation-4"
+          href="https://www.facebook.com/profile.php?id=100039462283773"
+          target="_blank"
+          style="background-color: white"
         >
-          <v-icon>
-            mdi-facebook
-          </v-icon>
+          <v-icon class="mr-1"> mdi-facebook </v-icon>
+          Magnolia Salon Boutique
         </v-btn>
+
         <v-btn
-          icon
+          class="elevation-4"
+          outlined
           large
           color="accent"
           href="https://www.instagram.com/magnoliasalonboutique/"
           target="_blank"
+          style="background-color: white"
         >
-          <v-icon>
-            mdi-instagram
-          </v-icon>
+          <v-icon class="mr-1"> mdi-instagram </v-icon>
+          @magnoliasalonboutique
         </v-btn>
       </v-col>
     </v-footer>
@@ -127,60 +108,60 @@
 </template>
 
 <script>
-  export default {
-    data () {
-      return {
-        title: 'Vuetify.js',
-        // This is an array of links which are objects with a url, text and binding.
-        // The url is either an anchor link or an outside url, the text is what is displayed on the button, and the binding specifies whether it should treat the button as an anchor link or href.
-        links: [
-          {
-            url: '/#hero',
-            text: 'Home',
-            binding: 'to',
-          },
-          {
-            url: '/#about',
-            text: 'About',
-            binding: 'to',
-          },
-          {
-            url: '/#team',
-            text: 'Our Team',
-            binding: 'to',
-          },
-          {
-            url: '/#products',
-            text: 'Products',
-            binding: 'to',
-          },
-          {
-            url: '/#services',
-            text: 'Services',
-            binding: 'to',
-          },
-          {
-            url: '/#contact',
-            text: 'Contact',
-            binding: 'to',
-          },
-          {
-            url: '/#career',
-            text: 'Career Paths',
-            binding: 'to',
-          },
-          {
-            url: 'https://www.instagram.com/magnoliasalonboutique/',
-            text: 'Instagram',
-            binding: 'href',
-          },
-          {
-            url: '/blog',
-            text: 'Blog',
-            binding: 'to',
-          },
-        ],
-      }
-    },
-  }
+export default {
+  data() {
+    return {
+      title: 'Vuetify.js',
+      // This is an array of links which are objects with a url, text and binding.
+      // The url is either an anchor link or an outside url, the text is what is displayed on the button, and the binding specifies whether it should treat the button as an anchor link or href.
+      links: [
+        {
+          url: '/#hero',
+          text: 'Home',
+          binding: 'to',
+        },
+        {
+          url: '/#about',
+          text: 'About',
+          binding: 'to',
+        },
+        {
+          url: '/#team',
+          text: 'Our Team',
+          binding: 'to',
+        },
+        {
+          url: '/#products',
+          text: 'Products',
+          binding: 'to',
+        },
+        {
+          url: '/#services',
+          text: 'Services',
+          binding: 'to',
+        },
+        {
+          url: '/#contact',
+          text: 'Contact',
+          binding: 'to',
+        },
+        {
+          url: '/#career',
+          text: 'Career Paths',
+          binding: 'to',
+        },
+        {
+          url: 'https://www.instagram.com/magnoliasalonboutique/',
+          text: 'Instagram',
+          binding: 'href',
+        },
+        {
+          url: '/blog',
+          text: 'Blog',
+          binding: 'to',
+        },
+      ],
+    }
+  },
+}
 </script>
