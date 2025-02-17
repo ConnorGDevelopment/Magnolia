@@ -29,7 +29,7 @@
                     </v-card-title>
                     <v-card-text
                       :class="classBundle.body1"
-                      v-if="member.quote"
+                      v-if="member.title"
                     >
                       {{ member.title }}
                     </v-card-text>
