@@ -27,13 +27,19 @@
                     <v-card-title :class="classBundle.headline">
                       {{ member.name }}
                     </v-card-title>
-
+                    <v-card-text
+                      :class="classBundle.body1"
+                      v-if="member.quote"
+                    >
+                      {{ member.title }}
+                    </v-card-text>
                     <v-card-text
                       :class="classBundle.body1Italic"
                       v-if="member.quote"
                     >
                       {{ member.quote }}
                     </v-card-text>
+
                     <v-card-text
                       :class="classBundle.body1"
                       v-if="member.specialty"
@@ -128,7 +134,7 @@ export default {
       team: [
         {
           image: '/img/team1.png',
-          name: 'Dyan Carol Reckner',
+          name: 'Dyan Carol',
           quote: '"When you look good, you perform better" - Anonymous',
           specialty:
             'My specialty is to take today’s trends and adjust them to the individual’s age, face shape, and physical stature.',
@@ -136,7 +142,7 @@ export default {
             'Products: Davines Specialty Salon, WOW Hair Care inn store and/or online, anything from the Manoco Blue professional hair care supplier.',
           contact: {
             line1: 'Call or text',
-            phone: '614-464-7117',
+            phone: '614-560-5327',
             line2:
               'for appointments and/or pricing. Complimentary consults offered.',
           },
@@ -158,31 +164,54 @@ export default {
               'for appointments and/or pricing. Complimentary consults offered.',
           },
         },
+        // {
+        //   image: '/img/team3.png',
+        //   name: 'Abbey Winter',
+        //   quote:
+        //     '"I think the most important thing a woman can have is her hairdresser" - Dolly Parton',
+        //   products: "Products: Redken, Unite, L'anza, Davines",
+        //   facebook: {
+        //     title: 'Abbey Alison - Stylist',
+        //     link: 'https://www.facebook.com/StyledbyAbbeyy',
+        //   },
+        //   instagram: {
+        //     title: '@stylebyabbeyy',
+        //     link: 'https://www.instagram.com/styledbyabbeyy/',
+        //   },
+        //   contact: {
+        //     line1: 'Call',
+        //     phone: '614-260-5855',
+        //     line2:
+        //       'or tap/scan the QR code below for appointments and pricing.',
+        //     qr: {
+        //       image: '/img/team3QR.png',
+        //       link: 'https://salon-103134.square.site/',
+        //     },
+        //   },
+        // },
         {
-          image: '/img/team3.png',
-          name: 'Abbey Winter',
-          quote:
-            '"I think the most important thing a woman can have is her hairdresser" - Dolly Parton',
-          products: "Products: Redken, Unite, L'anza, Davines",
-          facebook: {
-            title: 'Abbey Alison - Stylist',
-            link: 'https://www.facebook.com/StyledbyAbbeyy',
-          },
-          instagram: {
-            title: '@stylebyabbeyy',
-            link: 'https://www.instagram.com/styledbyabbeyy/',
-          },
+          image: '/img/team4.png',
+          name: 'Dan Mullet',
+          specialty: "My focus is hair cutting and multi-dimensional color techniques, including foil weavings, slicing color application techniques, color correction and color retouch. I believe that a perfect cut or color starts with open dialogue between the client and designer. Whether you know exactly what you want or need some guidance, I take the consultation seriously and will do my best to ask all the right questions so that we both feel confident in our plan for your hair. I look forward to starting our journey!",
+          title: 'Hair Designer/Barber',
           contact: {
-            line1: 'Call',
-            phone: '614-260-5855',
-            line2:
-              'or tap/scan the QR code below for appointments and pricing.',
-            qr: {
-              image: '/img/team3QR.png',
-              link: 'https://salon-103134.square.site/',
-            },
-          },
+            line1: 'Call or text',
+            phone: '614-638-3765',
+            line2: 'for appointments and/or pricing.'
+          }
         },
+        {
+          image: '/img/team5.png',
+          name: 'Kim McElhaney',
+          title: 'Esthetician',
+          specialty: "With a true passion for helping people feel their best, I have dedicated my career to making clients confident and comfortable in their own skin. With extensive years of experience in the esthetics industry, I recognize that each person is unique, and I take pride in creating personalized treatments to meet individual needs. Some of the most-loved services among my clients include the Derma-plane, Custom Facial and the Hydra Peel Advanced, all designed to deeply exfoliate, hydrate, and rejuvenate the skin for a healthy, radiant glow. I also incorporate high-quality skincare products into my treatments and recommendations.",
+          products: "Skin Ceuticals, ProCell MD Aftercare, Bio Elements, and Skin Script",
+          contact: {
+            line1: "Call or text",
+            phone: "614-565-8724",
+            line2: "for an appointment or pricing. Complimentary consults offered."
+          }
+        }
       ],
     }
   },
